@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuition & Admissions | Thomas Aquinas Institute</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+        :root { --navy: #0a1d37; --gold: #ffcc00; }
+        body { font-family: 'Inter', sans-serif; color: #1a1a1a; }
+        .serif-font { font-family: 'Playfair Display', serif; }
+        .bg-navy { background-color: var(--navy); }
+        .bg-gold { background-color: var(--gold); }
+        .text-navy { color: var(--navy); }
+        .text-gold { color: var(--gold); }
+        .btn-institutional {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            background-color: var(--navy);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border: 1px solid var(--navy);
+            transition: all 0.3s ease;
+        }
+        .nav-link { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #e5e7eb; padding: 1.25rem; text-align: left; }
+        th { background-color: #f9fafb; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: #0a1d37; }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Navigation -->
+    <nav class="bg-white sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 flex justify-between items-center h-20">
+            <a href="index.php" class="flex items-center space-x-4">
+                <div class="w-10 h-10 bg-navy flex items-center justify-center"><i class="fa-solid fa-shield-halved text-gold"></i></div>
+                <h1 class="text-navy font-bold tracking-tighter text-sm uppercase">Thomas Aquinas</h1>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.php" class="nav-link text-gray-500 hover:text-navy">The Institute</a>
+                <a href="faculty.html" class="nav-link text-gray-500 hover:text-navy">Faculty</a>
+                <a href="tuition.html" class="nav-link text-navy">Admissions</a>
+            </div>
+            <a href="index.php" class="btn-institutional px-6 py-2">Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-24 border-b border-gray-100">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <span class="text-navy text-xs font-bold uppercase tracking-widest block mb-4">Investment in Excellence</span>
+            <h2 class="serif-font text-5xl text-navy mb-8">Tuition & Financial Information</h2>
+            <p class="text-gray-500 text-lg leading-relaxed">We are committed to providing an elite educational experience that remains accessible to families in the Cavite region. Below is the schedule of fees for the Academic Year 2025-2026.</p>
+        </div>
+    </section>
+
+    <!-- Fees Table -->
+    <section class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="mb-12 border-l-4 border-gold pl-8">
+                <h3 class="serif-font text-2xl text-navy uppercase tracking-tight">Academic Programs</h3>
+                <p class="text-gray-500 text-[10px] uppercase tracking-widest font-bold">Comprehensive Fee Schedule</p>
+            </div>
+
+            <div class="bg-white shadow-sm border border-gray-200 overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Particulars</th>
+                            <th>Cash Payment</th>
+                            <th>Installment Plan</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr>
+                            <td class="font-semibold text-navy">Kindergarten 1 & 2</td>
+                            <td>₱28,500.00</td>
+                            <td>₱31,200.00</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-navy">Grade 1 to Grade 3</td>
+                            <td>₱32,000.00</td>
+                            <td>₱35,500.00</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-navy">Grade 4 to Grade 6</td>
+                            <td>₱34,500.00</td>
+                            <td>₱38,000.00</td>
+                        </tr>
+                         <tr>
+                            <td class="font-semibold text-navy">Grade 7 to Grade 10</td>
+                            <td>₱35,500.00</td>
+                            <td>₱40,000.00</td>
+                        </tr>
+                         <tr>
+                            <td class="font-semibold text-navy">Grade 11 to Grade 12</td>
+                            <td>₱37,500.00</td>
+                            <td>₱42,000.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-8 p-6 bg-navy text-white flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h4 class="font-bold text-gold uppercase text-[10px] tracking-[0.2em]">Downpayment Required</h4>
+                    <p class="text-xl serif-font italic">₱5,000.00 upon registration</p>
+                </div>
+                <div class="text-right">
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Inquire about</p>
+                    <p class="font-bold">Sibling Discounts Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Policies -->
+    <section class="py-24">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="serif-font text-2xl text-navy mb-6">Payment Modalities</h3>
+                    <div class="space-y-6">
+                        <div class="flex gap-6 pb-6 border-b border-gray-100">
+                            <i class="fa-solid fa-credit-card text-gold pt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-xs uppercase mb-2">Electronic Transfer</h4>
+                                <p class="text-gray-600 text-xs">We accept payments via BDO, BPI, and GCash. Please send proof of transaction to our Finance Office.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 pb-6 border-b border-gray-100">
+                            <i class="fa-solid fa-building-columns text-gold pt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-xs uppercase mb-2">On-Campus Cashier</h4>
+                                <p class="text-gray-600 text-xs">The Finance Office is open Monday to Friday, 8:00 AM to 4:00 PM for cash and cheque payments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-12 border border-gray-200">
+                    <h3 class="serif-font text-2xl text-navy mb-6">Financial Policies</h3>
+                    <ul class="space-y-4 text-xs text-gray-600 leading-relaxed">
+                        <li class="flex items-start gap-4">
+                            <span class="text-navy font-bold">01</span>
+                            <span>Tuition fees must be settled according to the chosen payment schedule (Monthly, Quarterly, or Semestral).</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-navy font-bold">02</span>
+                            <span>A surcharge of 3% will be applied to late payments exceeding 15 days from the due date.</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-navy font-bold">03</span>
+                            <span>Official receipts will only be issued upon verification of funds.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 bg-white border-y border-gray-200 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="serif-font text-3xl text-navy mb-8">Begin the Application Process</h2>
+            <div class="flex justify-center gap-4">
+                <a href="#" class="btn-institutional">Download Forms</a>
+                <a href="#" class="btn-institutional bg-gold text-navy border-gold">Apply Online</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy py-12 text-center">
+        <p class="text-gray-500 text-[10px] uppercase tracking-widest font-bold">&copy; 2025 Thomas Aquinas Institute | Finance Department</p>
+    </footer>
+</body>
+</html>

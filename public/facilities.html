@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Facilities - Thomas Aquinas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .serif-font { font-family: 'Playfair Display', serif; }
+        .bg-navy { background-color: #0a1d37; }
+        .text-gold { color: #ffcc00; }
+        .gallery-item { cursor: zoom-in; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <nav class="bg-navy text-white py-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.php" class="flex items-center space-x-3">
+                <img src="https://cdn-icons-png.flaticon.com/512/2940/2940651.png" alt="Logo" class="w-8 h-8 bg-white rounded-full p-1">
+                <span class="font-bold text-sm tracking-widest uppercase">The Thomas Aquinas</span>
+            </a>
+            <a href="index.php" class="text-xs font-bold hover:text-gold uppercase tracking-widest">Back</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="h-[60vh] relative flex items-center justify-center">
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1920&q=80" class="absolute inset-0 w-full h-full object-cover brightness-50" alt="Campus">
+        <div class="relative z-10 text-center text-white">
+            <h1 class="text-5xl serif-font mb-4">Our Learning Spaces</h1>
+            <p class="text-gold font-bold uppercase tracking-widest text-sm">A Premium Campus Built for Discovery</p>
+        </div>
+    </section>
+
+    <!-- Facilities Grid -->
+    <section class="py-24">
+        <div class="container mx-auto px-6">
+            
+            <!-- Classrooms -->
+            <div class="mb-24">
+                <div class="flex justify-between items-end mb-8">
+                    <div>
+                        <h2 class="text-3xl serif-font text-navy">Modern Classrooms</h2>
+                        <p class="text-gray-500 text-sm mt-2">Fully air-conditioned, tech-integrated learning environments.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" class="gallery-item rounded-2xl h-64 w-full object-cover shadow-lg hover:opacity-90 transition">
+                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80" class="gallery-item rounded-2xl h-64 w-full object-cover shadow-lg hover:opacity-90 transition">
+                    <div class="bg-navy rounded-2xl p-8 text-white flex flex-col justify-center">
+                        <i class="fas fa-snowflake text-gold text-3xl mb-4"></i>
+                        <h4 class="font-bold mb-2">Climate Controlled</h4>
+                        <p class="text-xs text-white/60 leading-relaxed">We maintain an optimal temperature of 22°C to ensure maximum student focus and comfort.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Labs -->
+            <div class="mb-24">
+                <div class="flex justify-between items-end mb-8">
+                    <div>
+                        <h2 class="text-3xl serif-font text-navy">Laboratories & Innovation</h2>
+                        <p class="text-gray-500 text-sm mt-2">Hands-on experience with cutting-edge equipment.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="relative group overflow-hidden rounded-2xl">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=600&q=80" class="h-64 w-full object-cover">
+                        <div class="absolute inset-0 bg-navy/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center p-6 text-center">
+                            <div>
+                                <h5 class="text-gold font-bold mb-2">Science Lab</h5>
+                                <p class="text-[10px] text-white">Equipped for Biology, Chemistry, and Physics experiments.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group overflow-hidden rounded-2xl">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" class="h-64 w-full object-cover">
+                        <div class="absolute inset-0 bg-navy/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center p-6 text-center">
+                            <div>
+                                <h5 class="text-gold font-bold mb-2">Computer Hub</h5>
+                                <p class="text-[10px] text-white">1:1 Student-to-PC ratio with fiber-optic connectivity.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group overflow-hidden rounded-2xl">
+                        <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80" class="h-64 w-full object-cover">
+                        <div class="absolute inset-0 bg-navy/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center p-6 text-center">
+                            <div>
+                                <h5 class="text-gold font-bold mb-2">Library</h5>
+                                <p class="text-[10px] text-white">Over 10,000 titles and digital academic database access.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group overflow-hidden rounded-2xl">
+                        <img src="https://images.unsplash.com/photo-1541339907198-e08759df9a73?auto=format&fit=crop&w=600&q=80" class="h-64 w-full object-cover">
+                        <div class="absolute inset-0 bg-navy/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center p-6 text-center">
+                            <div>
+                                <h5 class="text-gold font-bold mb-2">Multi-Purpose Hall</h5>
+                                <p class="text-[10px] text-white">Events, theater, and large-scale academic symposiums.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sports -->
+            <div>
+                <div class="flex flex-col md:flex-row gap-12 items-center bg-white p-12 rounded-3xl shadow-lg border border-gray-100">
+                    <div class="w-full md:w-1/2">
+                        <h2 class="text-3xl serif-font text-navy mb-6">Sports & Athletics Complex</h2>
+                        <ul class="space-y-4 text-gray-600">
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check-circle text-gold"></i>
+                                <span>Full-sized covered Basketball court</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check-circle text-gold"></i>
+                                <span>Indoor Volleyball and Badminton courts</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check-circle text-gold"></i>
+                                <span>Mini-Olympic Swimming Pool (Elementary/JHS use)</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check-circle text-gold"></i>
+                                <span>Student Gymnasium & Lounge</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-xl">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Simple Modal Preview (CSS Only behavior simulated) -->
+    <div id="imageModal" class="fixed inset-0 bg-black/90 hidden z-[100] flex items-center justify-center p-10">
+        <button class="absolute top-10 right-10 text-white text-3xl" onclick="document.getElementById('imageModal').classList.add('hidden')">&times;</button>
+        <img src="" id="modalImg" class="max-h-full max-w-full rounded-lg">
+    </div>
+
+    <script>
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.onclick = () => {
+                const modal = document.getElementById('imageModal');
+                const modalImg = document.getElementById('modalImg');
+                modalImg.src = item.src;
+                modal.classList.remove('hidden');
+            }
+        });
+    </script>
+
+    <footer class="bg-navy py-8 text-center text-white/20 text-[10px] uppercase tracking-widest">
+        Designed for The Thomas Aquinas Institute of Learning
+    </footer>
+
+</body>
+</html>

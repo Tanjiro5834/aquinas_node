@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty & Administration | Thomas Aquinas Institute</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+        
+        :root { --navy: #0a1d37; --gold: #ffcc00; }
+        body { font-family: 'Inter', sans-serif; color: #1a1a1a; }
+        .serif-font { font-family: 'Playfair Display', serif; }
+        .bg-navy { background-color: var(--navy); }
+        .bg-gold { background-color: var(--gold); }
+        .text-navy { color: var(--navy); }
+        .text-gold { color: var(--gold); }
+        
+        .faculty-card img {
+            filter: grayscale(100%);
+            transition: all 0.4s ease;
+        }
+        .faculty-card:hover img {
+            filter: grayscale(0%);
+        }
+        .btn-institutional {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            background-color: var(--navy);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border: 1px solid var(--navy);
+            transition: all 0.3s ease;
+        }
+        .nav-link {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Navigation -->
+    <nav class="bg-white sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 flex justify-between items-center h-20">
+            <a href="index.html" class="flex items-center space-x-4">
+                <div class="w-10 h-10 bg-navy flex items-center justify-center">
+                   <i class="fa-solid fa-shield-halved text-gold"></i>
+                </div>
+                <h1 class="text-navy font-bold tracking-tighter text-sm uppercase">Thomas Aquinas</h1>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.php" class="nav-link text-gray-500 hover:text-navy">The Institute</a>
+                <a href="faculty.html" class="nav-link text-navy">Administrators and Faculty</a>
+                <a href="tuition.html" class="nav-link text-gray-500 hover:text-navy">Admissions</a>
+            </div>
+            <a href="tuition.html" class="btn-institutional px-6 py-2">Apply</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="bg-navy py-24 border-b border-gold">
+        <div class="container mx-auto px-6 text-center">
+            <span class="text-gold text-xs font-bold uppercase tracking-[0.3em] block mb-4">Academic Leadership</span>
+            <h2 class="serif-font text-white text-5xl mb-6">Faculty & Administration</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-sm">Dedicated educators committed to fostering intellectual growth and moral formation in the light of Catholic truth.</p>
+        </div>
+    </section>
+
+    <!-- 1️⃣ Office of the Directors Section -->
+    <section class="py-24 border-b border-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="mb-16 border-l-4 border-navy pl-8">
+                <h3 class="serif-font text-3xl text-navy mb-2">Office of the Directors</h3>
+                <p class="text-gray-500 text-xs uppercase tracking-widest font-bold">Strategic Governance</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="flex flex-col md:flex-row gap-8 items-start border border-gray-100 p-8 hover:border-gray-300 transition group">
+                    <div class="w-full md:w-48 aspect-[3/4] bg-gray-100 flex-shrink-0 overflow-hidden">
+                        <img src="none" alt="Academic Director" class="w-full h-full object-cover grayscale transition duration-500 group-hover:grayscale-0">
+                    </div>
+                    <div>
+                        <h4 class="serif-font text-2xl text-navy mb-1">Marites S. Eustacio</h4>
+                        <p class="text-gold text-[10px] uppercase tracking-widest font-bold mb-4">Academic Director</p>
+                        <p class="text-gray-600 text-sm italic leading-relaxed">"Our vision is anchored on the synthesis of faith and reason, ensuring our institution remains a beacon of light for future generations."</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-8 items-start border border-gray-100 p-8 hover:border-gray-300 transition group">
+                    <div class="w-full md:w-48 aspect-[3/4] bg-gray-100 flex-shrink-0 overflow-hidden">
+                        <img src="none" alt="Director for Academic Affairs" class="w-full h-full object-cover grayscale transition duration-500 group-hover:grayscale-0">
+                    </div>
+                    <div>
+                        <h4 class="serif-font text-2xl text-navy mb-1">Ma. Louella A. Bucayu</h4>
+                        <p class="text-gold text-[10px] uppercase tracking-widest font-bold mb-4">School Director</p>
+                        <p class="text-gray-600 text-sm italic leading-relaxed">"We are committed to a curriculum that challenges the intellect while nurturing the soul, forming leaders of character and competence."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2️⃣ Office of the Principals Section -->
+    <section class="py-24 bg-gray-50/30">
+        <div class="container mx-auto px-6">
+            <div class="mb-16 border-l-4 border-navy pl-8">
+                <h3 class="serif-font text-3xl text-navy mb-2">Office of the Principals</h3>
+                <p class="text-gray-500 text-xs uppercase tracking-widest font-bold">Academic Administration</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="flex flex-col md:flex-row gap-8 items-start border border-gray-100 bg-white p-8 hover:border-gray-300 transition group">
+                    <div class="w-full md:w-48 aspect-[3/4] bg-gray-100 flex-shrink-0 overflow-hidden">
+                        <img src="none" alt="Preschool/Elementary Principal" class="w-full h-full object-cover grayscale transition duration-500 group-hover:grayscale-0">
+                    </div>
+                    <div>
+                        <h4 class="serif-font text-2xl text-navy mb-1">Jan Michael M. Bongolan</h4>
+                        <p class="text-gold text-[10px] uppercase tracking-widest font-bold mb-4">School Principal, Preschool / Elementary Levels</p>
+                        <p class="text-gray-600 text-sm italic leading-relaxed">"Our mission is to ensure every student finds their path toward excellence and service. Education is the gateway to a life of meaning."</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-8 items-start border border-gray-100 bg-white p-8 hover:border-gray-300 transition group">
+                    <div class="w-full md:w-48 aspect-[3/4] bg-gray-100 flex-shrink-0 overflow-hidden">
+                        <img src="none" alt="JHS/SHS Principal" class="w-full h-full object-cover grayscale transition duration-500 group-hover:grayscale-0">
+                    </div>
+                    <div>
+                        <h4 class="serif-font text-2xl text-navy mb-1">Anthony G. Rackhold</h4>
+                        <p class="text-gold text-[10px] uppercase tracking-widest font-bold mb-4">School Principal, Junior High School / Senior High School Levels</p>
+                        <p class="text-gray-600 text-sm italic leading-relaxed">"Fostering a community where discipline and compassion coexist to build a strong foundation for our students' future."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Administration Section (Finance) -->
+    <section class="py-24 border-t border-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="mb-16 border-l-4 border-navy pl-8">
+                <h3 class="serif-font text-3xl text-navy mb-2">Office of Finance</h3>
+                <p class="text-gray-500 text-xs uppercase tracking-widest font-bold">Institutional Operations</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="flex flex-col md:flex-row gap-8 items-start border border-gray-100 p-8 hover:border-gray-300 transition group">
+                    <div class="w-full md:w-48 aspect-[3/4] bg-gray-100 flex-shrink-0 overflow-hidden">
+                        <img src="none" alt="Admin" class="w-full h-full object-cover grayscale transition duration-500 group-hover:grayscale-0">
+                    </div>
+                    <div>
+                        <h4 class="serif-font text-2xl text-navy mb-1">Engr. Roberto C. Santos</h4>
+                        <p class="text-gold text-[10px] uppercase tracking-widest font-bold mb-4">Administrative & Finance Officer</p>
+                        <p class="text-gray-600 text-sm italic leading-relaxed">"Integrity in our operations ensures a stable environment where learning can truly flourish. We build for the future."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Grid -->
+    <section class="py-24 bg-gray-50 border-t border-gray-200">
+        <div class="container mx-auto px-6">
+            <div class="mb-16 text-center">
+                <h3 class="serif-font text-3xl text-navy mb-4">Subject Coordinators</h3>
+                <div class="w-20 h-1 bg-gold mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-0 border border-gray-200">
+                <!-- Card 1 -->
+                <div class="bg-white border-r border-b border-gray-200 p-10 faculty-card group text-center">
+                    <div class="w-32 h-32 mx-auto mb-8 bg-gray-200 overflow-hidden">
+                        <img src="none" alt="Teacher" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="font-bold text-navy text-sm uppercase tracking-wider mb-1">Mrs. Elena Bautista</h4>
+                    <p class="text-[10px] text-gold font-bold uppercase tracking-widest mb-4">English Department</p>
+                    <p class="text-gray-500 text-xs leading-relaxed italic">"Words have power. We teach our students to use them wisely."</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white border-r border-b border-gray-200 p-10 faculty-card group text-center">
+                    <div class="w-32 h-32 mx-auto mb-8 bg-gray-200 overflow-hidden">
+                        <img src="none" alt="Teacher" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="font-bold text-navy text-sm uppercase tracking-wider mb-1">Mr. David Cruz</h4>
+                    <p class="text-[10px] text-gold font-bold uppercase tracking-widest mb-4">Mathematics Lead</p>
+                    <p class="text-gray-500 text-xs leading-relaxed italic">"Precision in thought leads to excellence in action."</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white border-r border-b border-gray-200 p-10 faculty-card group text-center">
+                    <div class="w-32 h-32 mx-auto mb-8 bg-gray-200 overflow-hidden">
+                        <img src="none" alt="Teacher" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="font-bold text-navy text-sm uppercase tracking-wider mb-1">Ms. Sarah Lopez</h4>
+                    <p class="text-[10px] text-gold font-bold uppercase tracking-widest mb-4">Science Coordinator</p>
+                    <p class="text-gray-500 text-xs leading-relaxed italic">"Observing the wonders of creation through the lens of inquiry."</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white border-b border-gray-200 p-10 faculty-card group text-center">
+                    <div class="w-32 h-32 mx-auto mb-8 bg-gray-200 overflow-hidden">
+                        <img src="none" alt="Teacher" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="font-bold text-navy text-sm uppercase tracking-wider mb-1">Mr. Ricardo De Vera</h4>
+                    <p class="text-[10px] text-gold font-bold uppercase tracking-widest mb-4">MAPEH Lead</p>
+                    <p class="text-gray-500 text-xs leading-relaxed italic">"Developing discipline of body and mind through sports."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white pt-24 pb-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="w-16 h-px bg-gold mx-auto mb-8"></div>
+            <p class="text-[10px] uppercase tracking-[0.3em] text-gray-500 font-bold mb-4">&copy; 2025 Thomas Aquinas Institute of Learning</p>
+            <p class="text-xs text-gray-400">Brgy. Buhay na Tubig, Imus City, Cavite</p>
+        </div>
+    </footer>
+
+</body>
+</html>
